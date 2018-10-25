@@ -18,7 +18,7 @@
             <div class="panel panel-default">
                 <h2 class="panel-title">Update Details for a Country</h2>
                 <div class="panel-body">
-                    <form action="{{route('countries.update',['id' => $countries->id])}}" method="PATCH">
+                    <form action="{{route('countries.update',['id' => $countries->id])}}" method="POST">
                         {{csrf_field()}}
                         {{method_field('PATCH')}}
                         <div class="form-group">
