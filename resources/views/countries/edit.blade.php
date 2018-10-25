@@ -23,19 +23,19 @@
                         {{method_field('PATCH')}}
                         <div class="form-group">
                             <label>Country Name:</label>
-                            <input type="text" class="form-control" name="name" value="{{$countries->name}}" placeholder="Enter Country Name">
+                            <input type="text" class="form-control" name="name_updated" value="{{$countries->name}}">
                         </div>
                         <div class="form-group">
                             <label>Country Code:</label>
-                            <input type="text" class="form-control" name="code" value="{{$countries->code}}" placeholder="Enter Country Code">
+                            <input type="text" class="form-control" name="code_updated" value="{{$countries->code}}" >
                         </div>
                         <div class="form-group">
                             <label>Currency Code:</label>
-                            <input type="text" class="form-control" name="ccode" value="{{$countries->currency_code}}"  placeholder="Enter Currency Code">
+                            <input type="text" class="form-control" name="ccode_updated" value="{{$countries->currency_code}}">
                         </div>
                         <div class="form-group">
                             <label>Country Symbol:</label>
-                            <input type="text" class="form-control" name="symbol" value="{{$countries->country_symbol}}" placeholder="Enter Country Symbol">
+                            <input type="text" class="form-control" name="symbol_updated" value="{{$countries->country_symbol}}">
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary btn-block">Update</button>

@@ -80,10 +80,10 @@ class CountryController extends Controller
     {
         $countries = countries::findOrFail($id);
         $countries->update([
-            'name' =>  $request->name,
-            'code' =>  $request->code,
-            'currency_code' =>  $request->ccode,
-            'country_symbol' =>  $request->symbol
+            'name' =>  $request->name_updated,
+            'code' =>  $request->code_updated,
+            'currency_code' =>  $request->ccode_updated,
+            'country_symbol' =>  $request->symbol_updated
         ]);
         return redirect()->route('countries.index');
     }
