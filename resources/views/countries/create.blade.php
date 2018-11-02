@@ -9,6 +9,14 @@
     <title>Create Country</title>
 </head>
 <body>
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link" href="{{'/'}}">CRUD Project</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('countries.index')}}">Country</a>
+    </li>
+</ul>
 <div class="jumbotron text-center">
     <h1><strong>Create Country List</strong></h1>
     <p>Here you can create a list of countries</p>

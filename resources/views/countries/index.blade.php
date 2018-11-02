@@ -9,7 +9,15 @@
     <title>Countries</title>
 </head>
 <body>
-    <div class="jumbotron text-center">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="{{'/'}}">CRUD Project</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="{{route('countries.index')}}">Country</a>
+        </li>
+    </ul>
+<div class="jumbotron text-center">
         <h1><strong>Country</strong></h1>
         <p>Here you can see the list of countries</p>
         <a href="/countries/create" class="btn btn-success" role="button">Add Country</a>

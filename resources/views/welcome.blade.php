@@ -1,98 +1,87 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <title>CRUD Project</title>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1><strong>CRUD Project</strong></h1>
+    </div>
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="card">
+                    <div class="card-header"><strong>COUNTRIES</strong></div>
+                    <div class="card-body">Contains a country list along with some basic information about that country</div>
+                    <div class="card-footer">Status : <span class="badge badge-success">Created</span><p></p><a href="{{route('countries.index')}}" class="btn btn-primary" role="button">Enter</a></div>
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+            </div>
+            <div class="col-xl-4">
+                <div class="card">
+                    <div class="card-header"><strong>LOCATIONS</strong></div>
+                    <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et pretium mauris.</div>
+                    <div class="card-footer">Status : <span class="badge badge-danger">Not Created</span><p></p><a href="#" class="btn btn-primary disabled">Enter</a></div>
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+            </div>
+            <div class="col-xl-4">
+                <div class="card">
+                    <div class="card-header"><strong>CATEGORIES</strong></div>
+                    <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et pretium mauris.</div>
+                    <div class="card-footer">Status : <span class="badge badge-danger">Not Created</span><p></p><a href="#" class="btn btn-primary disabled">Enter</a></div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+    <p style="padding: 5px"></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header"><strong>SPECIALISM</strong></div>
+                    <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et pretium mauris.</div>
+                    <div class="card-footer">Status : <span class="badge badge-danger">Not Created</span><p></p><a href="#" class="btn btn-primary disabled">Enter</a></div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header"><strong>JOB TYPES</strong></div>
+                    <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et pretium mauris.</div>
+                    <div class="card-footer">Status : <span class="badge badge-danger">Not Created</span><p></p><a href="#" class="btn btn-primary disabled">Enter</a></div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header"><strong>COMPANIES</strong></div>
+                    <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et pretium mauris.</div>
+                    <div class="card-footer">Status : <span class="badge badge-danger">Not Created</span><p></p><a href="#" class="btn btn-primary disabled">Enter</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p style="padding: 5px"></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header"><strong>CANDIDATES</strong></div>
+                    <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et pretium mauris.</div>
+                    <div class="card-footer">Status : <span class="badge badge-danger">Not Created</span><p></p><a href="#" class="btn btn-primary disabled">Enter</a></div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header"><strong>PACKAGES</strong></div>
+                    <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et pretium mauris.</div>
+                    <div class="card-footer">Status : <span class="badge badge-danger">Not Created</span><p></p><a href="#" class="btn btn-primary disabled">Enter</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

@@ -9,6 +9,14 @@
     <title>Create Country</title>
 </head>
 <body>
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link" href="{{'/'}}">CRUD Project</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{route('countries.index')}}">Country</a>
+    </li>
+</ul>
 <div class="jumbotron text-center">
     <h1><strong>Update Details</strong></h1>
     <p>Here you edit values of a specific country</p>
